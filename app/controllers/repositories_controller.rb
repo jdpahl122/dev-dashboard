@@ -3,7 +3,7 @@ class RepositoriesController < ApplicationController
 
   # GET /repositories or /repositories.json
   def index
-    @repositories = Repository.all
+    @repositories = Repository.my_repos
   end
 
   # GET /repositories/1 or /repositories/1.json
